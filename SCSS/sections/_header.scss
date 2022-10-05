@@ -1,0 +1,40 @@
+header {
+    background-color: none;
+
+
+    .site-title {
+        // flex: 2;
+        h1 {
+            font-size: $font-size-35;
+            font-weight: $font-weight-bold;
+        }
+
+        
+        a:hover {
+            color: $color-black-1;
+        }
+    }
+
+    .navbar {
+        font-weight: $font-weight-meduim;
+        padding: 1rem;
+
+    }
+
+    .user-items {
+        display: flex;
+        justify-content: flex-end;
+        // flex: 2;
+        // padding: 1rem;
+
+        .round-button {
+            margin-left: 1.5rem;
+        }
+
+
+    }
+    
+}
+
+
+
