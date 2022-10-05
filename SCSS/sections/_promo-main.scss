@@ -1,0 +1,13 @@
+.promo-main {
+    display: none;
+
+    @include lg {
+        display: block;
+        background-image: linear-gradient(to right, $theme-color , $color-white-2);
+        position: absolute;
+        width: 100%;
+        top: -25px;
+        z-index: -1;
+        padding-top: 5%;
+    }
+}
