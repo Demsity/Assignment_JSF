@@ -4,14 +4,14 @@
     padding: .5rem;
     position: relative;
     transition: 100ms ease-in-out;
-    box-shadow: 0 0 1rem .5rem $color-white-2;
+    box-shadow: 0 0 .5rem .1rem $color-white-2;
     width: 40px;
     height: 40px;
     text-align: center;
 
     &:hover {
         background-color: $color-black-1;
-        color: $color-red-1;
+        color: $color-white-1;
     }
 }
 

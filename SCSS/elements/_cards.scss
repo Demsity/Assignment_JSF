@@ -25,5 +25,81 @@
         margin-left: 1rem;
     }
 
+}
 
+.grid-card {
+    text-align: center;
+
+    .grid-card-image {
+        position: relative;
+        overflow: hidden;
+
+        .grid-card-buttons {
+            position: absolute;
+            top: 250px;
+            height: 100%;
+            width: 100%;
+            background-color: $color-gray-6;
+            opacity: 90%;
+            transition: 250ms ease-in-out;
+        }
+
+        &:hover .grid-card-buttons {
+            top: 0;
+        }
+
+        &:hover .btn-red {
+            bottom: 0;
+            left: 0;
+        }
+
+        &:hover .grid-card-btn-round {
+            right: 10px;
+            top: 5px;
+        }
+        
+
+        .btn-red {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -100px;
+            transition: 250ms ease-in-out;
+        }
+
+        .grid-card-btn-round {
+            position: absolute;
+            right: 10px;
+            top: 250px;
+            display: flex;
+            flex-direction: column;
+            transition: 250ms ease-in-out;
+
+            .round-button {
+                margin-top: .5rem;
+            }
+        }
+    }
+    .grid-card-text-category {
+        margin-top: .5rem;
+        font-size: $font-size-13;
+        font-weight: $font-weight-meduim;
+        color: $color-gray-2;
+    }
+    .grid-card-text-product {
+        font-size: $font-size-16;
+        font-weight: $font-weight-semibold;
+    }
+
+    .grid-price-discount {
+        display: inline;
+        margin-right: .3rem;
+        color: $color-gray-1;
+        text-decoration: line-through;
+    }
+    .grid-price-original {
+        display: inline;
+        font-size: $font-size-18;
+        font-weight: $font-weight-semibold;
+    }
 }
