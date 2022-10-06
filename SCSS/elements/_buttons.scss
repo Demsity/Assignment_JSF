@@ -15,7 +15,7 @@
     }
 }
 
-._btn {
+.btn-red {
     background-color: $color-red-1;
     border: none;
     padding: 1rem 2rem;
@@ -49,6 +49,96 @@
         border-left: 0;
         border-top: 0;
         color: $color-white-1;
+        width: 20px;
+        height: 20px;
+        bottom: 10px;
+        right: 10px;
+
+    }
+}
+.btn-black {
+    background-color: $color-black-1;
+    border: none;
+    padding: 1rem 2rem;
+    color: $color-white-1;
+    position: relative;
+    transition: background-color 100ms ease-in-out;
+
+    &:hover {
+        background-color: $color-white-1;
+        color: $color-black-1;
+
+        &::before {color: $color-black-1;}
+        &::after {color: $color-black-1;}
+    }
+
+    &::before {
+        content: '  ';
+        position: absolute;
+        display: block;
+        border: 1px solid;
+        border-right: 0;
+        border-bottom: 0;
+        color: $color-white-1;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        left: 10px;
+
+    }
+    &::after {
+        content: '  ';
+        position: absolute;
+        display: block;
+        border: 1px solid;
+        border-left: 0;
+        border-top: 0;
+        color: $color-white-1;
+        width: 20px;
+        height: 20px;
+        bottom: 10px;
+        right: 10px;
+
+    }
+}
+.btn-white {
+    background-color: $color-white-1;
+    border: none;
+    padding: 1rem 2rem;
+    color: $color-black-1;
+    position: relative;
+    transition: 100ms ease-in-out;
+
+    &:hover {
+        background-color: $color-black-1;
+        color: $color-white-1;
+
+        &::before {color: $color-white-1;}
+        &::after {color: $color-white-1;}
+    }
+
+    &::before {
+        content: '  ';
+        position: absolute;
+        display: block;
+        border: 1px solid;
+        border-right: 0;
+        border-bottom: 0;
+        color: $color-black-1;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        left: 10px;
+
+    }
+    &::after {
+        content: '  ';
+        position: absolute;
+        display: block;
+        border: 1px solid;
+        border-left: 0;
+        border-top: 0;
+        color: $color-black-1;
         width: 20px;
         height: 20px;
         bottom: 10px;

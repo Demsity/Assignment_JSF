@@ -1,0 +1,29 @@
+._card {
+    background-color: $color-gray-6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 0.5rem 1rem 0 1.5rem;
+    // min-height: 450px;
+
+
+
+    h2 {
+        font-size: $font-size-45;
+        font-weight: $font-weight-bold;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: $font-size-16;
+        font-weight: $font-weight-regular;
+        margin-bottom: 2rem;
+    }
+
+    ._card-img {
+        margin-left: 1rem;
+    }
+
+
+}

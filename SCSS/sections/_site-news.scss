@@ -1,0 +1,21 @@
+.site-news-cards {
+    // margin-top: 680px;
+    display: none;
+
+
+    @include xxl {
+        display: block;
+
+        .card-1 {
+        
+            background-color: $color-brown-1;
+        }
+    
+        .card-2 {
+        
+            ._card-text {
+                margin-top: 140px;
+            }
+        }
+    }
+}

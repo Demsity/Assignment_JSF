@@ -2,9 +2,12 @@ header {
     background-color: none;
     z-index: 2;
 
+    @include lg {
+        margin-bottom: 680px;
+    }
 
     .site-title {
-        // flex: 2;
+        z-index: 2;
         h1 {
             font-size: $font-size-35;
             font-weight: $font-weight-bold;
@@ -17,16 +20,16 @@ header {
     }
 
     .navbar {
+        z-index: 2;
         font-weight: $font-weight-meduim;
         padding: 1rem;
 
     }
 
     .user-items {
+        z-index: 2;
         display: flex;
         justify-content: flex-end;
-        // flex: 2;
-        // padding: 1rem;
 
         .round-button {
             margin-left: 1.5rem;
