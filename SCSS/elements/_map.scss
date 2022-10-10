@@ -1,0 +1,13 @@
+.google-map {
+    margin: 1rem 0;
+    width: 100%;
+    height: 200px;
+
+    @include md {
+        height: 200px;
+    }
+
+    @include lg {
+        height: 500px;
+    }
+}

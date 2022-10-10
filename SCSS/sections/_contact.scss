@@ -1,0 +1,67 @@
+.crumbs {
+    display: flex;
+
+    i {
+        margin-right: .6rem;
+    }
+}
+
+
+.form {
+
+    .container {
+        justify-content: center;
+
+        form {
+
+            display: grid;
+            grid-gap: 1.5rem;
+            grid-template-areas:
+            'title title title title'
+            'form1 form1 form2 form2'
+            'form3 form3 form3 form3'
+            'form3 form3 form3 form3'
+            'btn none1 none2 none3'
+            ;
+            
+
+            .section-title {
+                grid-area: title;
+            }
+    
+            .form1 { 
+                grid-area: form1;
+
+                    input {
+                        width: 600px;
+                        height: 40px;
+                        padding: .3rem;
+                    }
+
+            }
+            .form2 { 
+                grid-area: form2;
+
+                input {
+                    width: 600px;
+                    height: 40px;
+                    padding: .3rem;
+                }
+            }
+            .form3 { 
+                grid-area: form3;
+                width: 100%;
+
+            }
+    
+            .btn-red {
+                grid-area: btn;
+            }
+
+        }
+
+    }
+
+}
+
+

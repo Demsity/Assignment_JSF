@@ -2,10 +2,6 @@ header {
     background-color: none;
     z-index: 2;
 
-    @include lg {
-        margin-bottom: 680px;
-    }
-
     .site-title {
         z-index: 2;
         h1 {
