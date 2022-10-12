@@ -1,0 +1,123 @@
+.sale-grid {
+     margin-top: 1rem;
+
+    .container-top {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .grid-wrapper-top {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'big big big big sm1 sm2'
+            'big big big big sm3 sm4'
+            ;
+            
+
+
+            .grid-box-big {
+                width: 700px;
+                height: 700px;
+                background-color: $color-gray-2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem;
+                grid-area: big;
+
+                p {
+                    font-size: $font-size-45;
+                    font-weight: $font-weight-bold;
+                    color: $color-white-1;
+                }
+
+                .btn-white {
+                    width: 30%;
+                }
+            }
+
+            .grid-card {
+                text-align: start;
+            }
+        }
+
+
+    }
+
+    .container-bottom {
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        .grid-wrapper-bottom {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'sm1 sm2 big big big big'
+            'sm3 sm4 big big big big'
+            ;
+            margin-top: 2rem;
+        
+        
+            .grid-box-big {
+                width: 700px;
+                height: 700px;
+                background-color: $color-gray-2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem;
+                grid-area: big;
+        
+                p {
+                    font-size: $font-size-45;
+                    font-weight: $font-weight-bold;
+                    color: $color-white-1;
+                }
+        
+                .btn-white {
+                    width: 30%;
+                }
+            }
+
+            .grid-card {
+                text-align: end;
+            }
+        }
+    }
+}
+
+
+#sale-card-1-top {
+    grid-area: sm1;
+}
+
+#sale-card-2-top {
+    grid-area: sm2;
+}
+#sale-card-3-top {
+    grid-area: sm3;
+}
+#sale-card-4-top {
+    grid-area: sm4;
+}
+
+
+#sale-card-1-bottom {
+    grid-area: sm1;
+}
+
+#sale-card-2-bottom {
+    grid-area: sm2;
+}
+#sale-card-3-bottom {
+    grid-area: sm3;
+}
+#sale-card-4-bottom {
+    grid-area: sm4;
+}
